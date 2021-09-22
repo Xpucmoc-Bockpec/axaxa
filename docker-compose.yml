@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  ahah:
+    build:
+      context: .
+    environment:
+      ACCESS_TOKEN: ''
+    deploy:
+      restart_policy:
+        condition: always
